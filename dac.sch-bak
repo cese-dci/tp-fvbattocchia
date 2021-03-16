@@ -1,0 +1,362 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Modulo Pcm5102a 5102 Decodificador Stereo Audio Digital"
+Date "2021-03-13"
+Rev ""
+Comp "Florencia Battocchia - Diseño de PCB -CESE"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pcm5102a-rescue:pcm5102a U1
+U 1 1 604D523C
+P 4900 3200
+F 0 "U1" H 4875 3875 50  0000 C CNN
+F 1 "pcm5102a" H 4875 3784 50  0000 C CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "" H 4800 3450 50  0001 C CNN
+	1    4900 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 604D4596
+P 6450 3050
+F 0 "R2" V 6243 3050 50  0000 C CNN
+F 1 "470R" V 6334 3050 50  0000 C CNN
+F 2 "" V 6380 3050 50  0001 C CNN
+F 3 "~" H 6450 3050 50  0001 C CNN
+	1    6450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 604D4D41
+P 5650 3550
+F 0 "C7" H 5765 3596 50  0000 L CNN
+F 1 "2.2uF" H 5765 3505 50  0000 L CNN
+F 2 "" H 5688 3400 50  0001 C CNN
+F 3 "~" H 5650 3550 50  0001 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_x2 J1
+U 1 1 604DAEE2
+P 7400 3050
+F 0 "J1" H 7500 3025 50  0000 L CNN
+F 1 "RCA-Connector" H 7500 2934 50  0000 L CNN
+F 2 "" H 7400 2950 50  0001 C CNN
+F 3 " ~" H 7400 2950 50  0001 C CNN
+	1    7400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 604E0C75
+P 3450 2450
+F 0 "SW1" V 3404 2580 50  0000 L CNN
+F 1 "SW_DIP_x01" V 3495 2580 50  0000 L CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "~" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 604E566E
+P 6450 3150
+F 0 "R3" V 6550 3150 50  0000 C CNN
+F 1 "470R" V 6650 3150 50  0000 C CNN
+F 2 "" V 6380 3150 50  0001 C CNN
+F 3 "~" H 6450 3150 50  0001 C CNN
+	1    6450 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 604E6BAC
+P 6100 3550
+F 0 "C9" H 6215 3596 50  0000 L CNN
+F 1 "2.2uF" H 6215 3505 50  0000 L CNN
+F 2 "" H 6138 3400 50  0001 C CNN
+F 3 "~" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 604E6D66
+P 3800 3950
+F 0 "C4" H 3915 3996 50  0000 L CNN
+F 1 "0.1uF" H 3915 3905 50  0000 L CNN
+F 2 "" H 3838 3800 50  0001 C CNN
+F 3 "~" H 3800 3950 50  0001 C CNN
+	1    3800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 604E6F3C
+P 3800 3600
+F 0 "C3" H 3915 3646 50  0000 L CNN
+F 1 "0.1uF" H 3915 3555 50  0000 L CNN
+F 2 "" H 3838 3450 50  0001 C CNN
+F 3 "~" H 3800 3600 50  0001 C CNN
+	1    3800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 604E712E
+P 6650 3400
+F 0 "C12" H 6765 3446 50  0000 L CNN
+F 1 "2.2nF" H 6765 3355 50  0000 L CNN
+F 2 "" H 6688 3250 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 604E73B9
+P 7100 3400
+F 0 "C13" H 7215 3446 50  0000 L CNN
+F 1 "2.2nF" H 7215 3355 50  0000 L CNN
+F 2 "" H 7138 3250 50  0001 C CNN
+F 3 "~" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 604E77CA
+P 4050 2400
+F 0 "C5" H 4165 2446 50  0000 L CNN
+F 1 "0.1uF" H 4165 2355 50  0000 L CNN
+F 2 "" H 4088 2250 50  0001 C CNN
+F 3 "~" H 4050 2400 50  0001 C CNN
+	1    4050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 604E7AF3
+P 5650 2800
+F 0 "C6" H 5765 2846 50  0000 L CNN
+F 1 "0.1uF" H 5765 2755 50  0000 L CNN
+F 2 "" H 5688 2650 50  0001 C CNN
+F 3 "~" H 5650 2800 50  0001 C CNN
+	1    5650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 604E99FE
+P 3350 3600
+F 0 "C1" H 3441 3646 50  0000 L CNN
+F 1 "10uF" H 3441 3555 50  0000 L CNN
+F 2 "" H 3350 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
+	1    3350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C8
+U 1 1 604E9E0D
+P 6050 2800
+F 0 "C8" H 5959 2754 50  0000 R CNN
+F 1 "10uF" H 5959 2845 50  0000 R CNN
+F 2 "" H 6050 2800 50  0001 C CNN
+F 3 "~" H 6050 2800 50  0001 C CNN
+	1    6050 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1_Small C2
+U 1 1 604EA1DE
+P 3350 3950
+F 0 "C2" H 3259 3904 50  0000 R CNN
+F 1 "10uF" H 3259 3995 50  0000 R CNN
+F 2 "" H 3350 3950 50  0001 C CNN
+F 3 "~" H 3350 3950 50  0001 C CNN
+	1    3350 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1_Small C11
+U 1 1 604EA5B5
+P 6500 3950
+F 0 "C11" H 6591 3996 50  0000 L CNN
+F 1 "10uF" H 6591 3905 50  0000 L CNN
+F 2 "" H 6500 3950 50  0001 C CNN
+F 3 "~" H 6500 3950 50  0001 C CNN
+	1    6500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2750 4400 2150
+Wire Wire Line
+	3600 2150 3450 2150
+Wire Wire Line
+	3350 3850 3350 3800
+Wire Wire Line
+	3800 3750 3800 3800
+Wire Wire Line
+	3800 3800 3350 3800
+Connection ~ 3800 3800
+Connection ~ 3350 3800
+Wire Wire Line
+	3350 3800 3350 3700
+Wire Wire Line
+	3800 3450 3350 3450
+Wire Wire Line
+	3350 3450 3350 3500
+Connection ~ 3800 3450
+Wire Wire Line
+	4400 3550 4150 3550
+Wire Wire Line
+	4150 3550 4150 3800
+Wire Wire Line
+	4400 3650 4250 3650
+Wire Wire Line
+	4250 3650 4250 4100
+Wire Wire Line
+	3800 4100 3350 4100
+Wire Wire Line
+	3350 4100 3350 4050
+Connection ~ 3800 4100
+Wire Wire Line
+	5450 2950 5650 2950
+Connection ~ 5650 2950
+Wire Wire Line
+	5450 2850 5550 2850
+Wire Wire Line
+	5550 2850 5550 2650
+Wire Wire Line
+	5550 2650 5650 2650
+Connection ~ 5650 2650
+Wire Wire Line
+	6100 3800 6100 3700
+Connection ~ 6100 3700
+Wire Wire Line
+	6100 3250 6100 3400
+Wire Wire Line
+	5450 3550 5500 3550
+Wire Wire Line
+	5500 3550 5500 3700
+Wire Wire Line
+	5450 3650 5450 4100
+Wire Wire Line
+	4100 2850 4400 2850
+Wire Wire Line
+	4400 2950 3300 2950
+Wire Wire Line
+	4400 3050 3300 3050
+Wire Wire Line
+	4400 3150 3300 3150
+Wire Wire Line
+	4400 3250 4100 3250
+Wire Wire Line
+	4400 3350 4100 3350
+$Comp
+L Device:R R1
+U 1 1 604E53A3
+P 3750 2150
+F 0 "R1" V 3950 2100 50  0000 L CNN
+F 1 "10R" V 3850 2100 50  0000 L CNN
+F 2 "" V 3680 2150 50  0001 C CNN
+F 3 "~" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 3050 6300 3050
+Wire Wire Line
+	5450 3150 6300 3150
+Wire Wire Line
+	6600 3150 6650 3150
+Wire Wire Line
+	6650 3250 6650 3150
+Connection ~ 6650 3150
+Wire Wire Line
+	6650 3150 7200 3150
+Wire Wire Line
+	7100 3050 7100 2950
+Wire Wire Line
+	7100 2950 7200 2950
+Wire Wire Line
+	6600 3050 7100 3050
+Wire Wire Line
+	7100 3250 7100 3050
+Connection ~ 7100 3050
+Wire Wire Line
+	6050 2650 6050 2700
+Wire Wire Line
+	5650 2650 6050 2650
+Wire Wire Line
+	6050 2950 6050 2900
+Wire Wire Line
+	5650 2950 6050 2950
+Wire Wire Line
+	6100 3850 6500 3850
+Wire Wire Line
+	3800 3450 4400 3450
+Wire Wire Line
+	3800 3800 4150 3800
+Wire Wire Line
+	3800 4100 4250 4100
+Connection ~ 4050 2150
+Wire Wire Line
+	4050 2150 3900 2150
+Wire Wire Line
+	4050 2150 4400 2150
+Wire Wire Line
+	4050 2250 4050 2150
+Wire Wire Line
+	6500 4100 6500 4050
+Wire Wire Line
+	5450 3250 6100 3250
+Connection ~ 5650 3700
+Wire Wire Line
+	5650 3700 6100 3700
+Wire Wire Line
+	5500 3700 5650 3700
+Wire Wire Line
+	5450 3350 5650 3350
+Wire Wire Line
+	5650 3350 5650 3400
+Wire Wire Line
+	5650 3400 6100 3400
+Connection ~ 5650 3400
+Connection ~ 6100 3400
+Wire Wire Line
+	5450 3450 5500 3450
+Wire Wire Line
+	5500 3450 5500 3550
+Connection ~ 5500 3550
+Wire Wire Line
+	6100 4100 6500 4100
+Connection ~ 6100 4100
+Wire Wire Line
+	5450 4100 6100 4100
+$Comp
+L Device:C C10
+U 1 1 604E7E3D
+P 6100 3950
+F 0 "C10" H 6215 3996 50  0000 L CNN
+F 1 "0.1uF" H 6215 3905 50  0000 L CNN
+F 2 "" H 6138 3800 50  0001 C CNN
+F 3 "~" H 6100 3950 50  0001 C CNN
+	1    6100 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 1850 0    50   ~ 0
+Filter select :\nNormal latency (Low) / Low latency (High)
+$EndSCHEMATC
