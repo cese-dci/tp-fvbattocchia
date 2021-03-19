@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L pcm5102a-rescue:pcm5102a U1
+L dac-rescue:pcm5102a-pcm5102a-rescue U1
 U 1 1 604D523C
 P 4900 3200
 F 0 "U1" H 4875 3875 50  0000 C CNN
 F 1 "pcm5102a" H 4875 3784 50  0000 C CNN
 F 2 "" H 4800 3450 50  0001 C CNN
-F 3 "" H 4800 3450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/pcm5100.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1616058429087" H 4800 3450 50  0001 C CNN
 	1    4900 3200
 	-1   0    0    1   
 $EndComp
@@ -44,17 +44,6 @@ F 1 "2.2uF" H 5765 3505 50  0000 L CNN
 F 2 "" H 5688 3400 50  0001 C CNN
 F 3 "~" H 5650 3550 50  0001 C CNN
 	1    5650 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_Coaxial_x2 J1
-U 1 1 604DAEE2
-P 7400 3050
-F 0 "J1" H 7500 3025 50  0000 L CNN
-F 1 "RCA-Connector" H 7500 2934 50  0000 L CNN
-F 2 "" H 7400 2950 50  0001 C CNN
-F 3 " ~" H 7400 2950 50  0001 C CNN
-	1    7400 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -124,17 +113,6 @@ F 3 "~" H 6650 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
-U 1 1 604E73B9
-P 7100 3400
-F 0 "C13" H 7215 3446 50  0000 L CNN
-F 1 "2.2nF" H 7215 3355 50  0000 L CNN
-F 2 "" H 7138 3250 50  0001 C CNN
-F 3 "~" H 7100 3400 50  0001 C CNN
-	1    7100 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C5
 U 1 1 604E77CA
 P 4050 2400
@@ -148,12 +126,12 @@ $EndComp
 $Comp
 L Device:C C6
 U 1 1 604E7AF3
-P 5650 2800
-F 0 "C6" H 5765 2846 50  0000 L CNN
-F 1 "0.1uF" H 5765 2755 50  0000 L CNN
-F 2 "" H 5688 2650 50  0001 C CNN
-F 3 "~" H 5650 2800 50  0001 C CNN
-	1    5650 2800
+P 5650 2700
+F 0 "C6" H 5765 2746 50  0000 L CNN
+F 1 "0.1uF" H 5765 2655 50  0000 L CNN
+F 2 "" H 5688 2550 50  0001 C CNN
+F 3 "~" H 5650 2700 50  0001 C CNN
+	1    5650 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -170,12 +148,12 @@ $EndComp
 $Comp
 L Device:CP1_Small C8
 U 1 1 604E9E0D
-P 6050 2800
-F 0 "C8" H 5959 2754 50  0000 R CNN
-F 1 "10uF" H 5959 2845 50  0000 R CNN
-F 2 "" H 6050 2800 50  0001 C CNN
-F 3 "~" H 6050 2800 50  0001 C CNN
-	1    6050 2800
+P 6050 2700
+F 0 "C8" H 5959 2654 50  0000 R CNN
+F 1 "10uF" H 5959 2745 50  0000 R CNN
+F 2 "" H 6050 2700 50  0001 C CNN
+F 3 "~" H 6050 2700 50  0001 C CNN
+	1    6050 2700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -233,13 +211,13 @@ Wire Wire Line
 	3350 4100 3350 4050
 Connection ~ 3800 4100
 Wire Wire Line
-	5550 2650 5650 2650
-Connection ~ 5650 2650
+	5550 2550 5650 2550
+Connection ~ 5650 2550
 Wire Wire Line
 	6100 3800 6100 3700
 Connection ~ 6100 3700
 Wire Wire Line
-	6100 3250 6100 3400
+	6100 3250 6100 3350
 Wire Wire Line
 	5450 3550 5500 3550
 Wire Wire Line
@@ -247,17 +225,11 @@ Wire Wire Line
 Wire Wire Line
 	5450 3650 5450 4100
 Wire Wire Line
-	4100 2850 4400 2850
-Wire Wire Line
 	4400 2950 3300 2950
 Wire Wire Line
 	4400 3050 3300 3050
 Wire Wire Line
 	4400 3150 3300 3150
-Wire Wire Line
-	4400 3250 4100 3250
-Wire Wire Line
-	4400 3350 4100 3350
 $Comp
 L Device:R R1
 U 1 1 604E53A3
@@ -279,24 +251,9 @@ Wire Wire Line
 	6650 3250 6650 3150
 Connection ~ 6650 3150
 Wire Wire Line
-	6650 3150 7200 3150
+	6050 2550 6050 2600
 Wire Wire Line
-	7100 3050 7100 2950
-Wire Wire Line
-	7100 2950 7200 2950
-Wire Wire Line
-	6600 3050 7100 3050
-Wire Wire Line
-	7100 3250 7100 3050
-Connection ~ 7100 3050
-Wire Wire Line
-	6050 2650 6050 2700
-Wire Wire Line
-	5650 2650 6050 2650
-Wire Wire Line
-	6050 2950 6050 2900
-Wire Wire Line
-	5650 2950 6050 2950
+	5650 2550 6050 2550
 Wire Wire Line
 	6100 3850 6500 3850
 Wire Wire Line
@@ -326,10 +283,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 3350 5650 3400
 Wire Wire Line
-	5650 3400 6100 3400
-Connection ~ 5650 3400
-Connection ~ 6100 3400
-Wire Wire Line
 	5450 3450 5500 3450
 Wire Wire Line
 	5500 3450 5500 3550
@@ -355,8 +308,248 @@ Filter select :\nNormal latency (Low) / Low latency (High)
 Wire Wire Line
 	5450 2850 5550 2850
 Wire Wire Line
-	5550 2850 5550 2650
+	7100 3050 7100 2950
+Text Notes 7650 2950 0    50   ~ 0
+Right Channel Line Output
+Text Notes 7650 3300 0    50   ~ 0
+Left Channel Line Output
 Wire Wire Line
-	5650 2950 5450 2950
-Connection ~ 5650 2950
+	5650 3350 6100 3350
+Connection ~ 5650 3350
+Connection ~ 6100 3350
+Wire Wire Line
+	6100 3350 6100 3400
+$Comp
+L power:GNDA #PWR012
+U 1 1 6056AD9C
+P 7500 3350
+F 0 "#PWR012" H 7500 3100 50  0001 C CNN
+F 1 "GNDA" H 7505 3177 50  0000 C CNN
+F 2 "" H 7500 3350 50  0001 C CNN
+F 3 "" H 7500 3350 50  0001 C CNN
+	1    7500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR07
+U 1 1 6056EE96
+P 6650 3550
+F 0 "#PWR07" H 6650 3300 50  0001 C CNN
+F 1 "GNDA" H 6655 3377 50  0000 C CNN
+F 2 "" H 6650 3550 50  0001 C CNN
+F 3 "" H 6650 3550 50  0001 C CNN
+	1    6650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_x2 J1
+U 1 1 604DAEE2
+P 7500 3050
+F 0 "J1" H 7600 3025 50  0000 L CNN
+F 1 "RCA-Connector" H 7600 2934 50  0000 L CNN
+F 2 "" H 7500 2950 50  0001 C CNN
+F 3 " ~" H 7500 2950 50  0001 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 604E73B9
+P 7100 3400
+F 0 "C13" H 7215 3446 50  0000 L CNN
+F 1 "2.2nF" H 7215 3355 50  0000 L CNN
+F 2 "" H 7138 3250 50  0001 C CNN
+F 3 "~" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3050 7100 3050
+Wire Wire Line
+	7100 2950 7300 2950
+$Comp
+L power:GNDA #PWR011
+U 1 1 6059B373
+P 7100 3550
+F 0 "#PWR011" H 7100 3300 50  0001 C CNN
+F 1 "GNDA" H 7105 3377 50  0000 C CNN
+F 2 "" H 7100 3550 50  0001 C CNN
+F 3 "" H 7100 3550 50  0001 C CNN
+	1    7100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3150 7300 3150
+Wire Wire Line
+	7100 3250 7100 3050
+Connection ~ 7100 3050
+$Comp
+L power:GNDA #PWR09
+U 1 1 605A3435
+P 6900 3850
+F 0 "#PWR09" H 6900 3600 50  0001 C CNN
+F 1 "GNDA" H 6905 3677 50  0000 C CNN
+F 2 "" H 6900 3850 50  0001 C CNN
+F 3 "" H 6900 3850 50  0001 C CNN
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR06
+U 1 1 605A6F05
+P 6650 2550
+F 0 "#PWR06" H 6650 2300 50  0001 C CNN
+F 1 "GNDA" H 6655 2377 50  0000 C CNN
+F 2 "" H 6650 2550 50  0001 C CNN
+F 3 "" H 6650 2550 50  0001 C CNN
+	1    6650 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3850 6900 3850
+Connection ~ 6500 3850
+Wire Wire Line
+	6050 2550 6650 2550
+Connection ~ 6050 2550
+$Comp
+L power:Earth #PWR01
+U 1 1 605B8A2F
+P 3100 3800
+F 0 "#PWR01" H 3100 3550 50  0001 C CNN
+F 1 "Earth" H 3100 3650 50  0001 C CNN
+F 2 "" H 3100 3800 50  0001 C CNN
+F 3 "~" H 3100 3800 50  0001 C CNN
+	1    3100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR03
+U 1 1 605C16DA
+P 3200 3350
+F 0 "#PWR03" H 3200 3100 50  0001 C CNN
+F 1 "Earth" H 3200 3200 50  0001 C CNN
+F 2 "" H 3200 3350 50  0001 C CNN
+F 3 "~" H 3200 3350 50  0001 C CNN
+	1    3200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR04
+U 1 1 605C29A0
+P 3450 2750
+F 0 "#PWR04" H 3450 2500 50  0001 C CNN
+F 1 "Earth" H 3450 2600 50  0001 C CNN
+F 2 "" H 3450 2750 50  0001 C CNN
+F 3 "~" H 3450 2750 50  0001 C CNN
+	1    3450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR05
+U 1 1 605C3B91
+P 5650 2400
+F 0 "#PWR05" H 5650 2150 50  0001 C CNN
+F 1 "Earth" H 5650 2250 50  0001 C CNN
+F 2 "" H 5650 2400 50  0001 C CNN
+F 3 "~" H 5650 2400 50  0001 C CNN
+	1    5650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3800 3100 3800
+Wire Wire Line
+	3200 3350 4400 3350
+Wire Wire Line
+	5450 2750 5450 2400
+Wire Wire Line
+	5450 2400 5650 2400
+Wire Wire Line
+	4400 3250 3200 3250
+Wire Wire Line
+	3200 3250 3200 3350
+Connection ~ 3200 3350
+Wire Wire Line
+	3450 2750 4050 2750
+Wire Wire Line
+	4050 2550 4050 2750
+Connection ~ 3450 2750
+Wire Wire Line
+	4050 2850 4050 2750
+Wire Wire Line
+	4050 2850 4400 2850
+Connection ~ 4050 2750
+$Comp
+L power:+3.3VA #PWR010
+U 1 1 6060360F
+P 6900 4300
+F 0 "#PWR010" H 6900 4150 50  0001 C CNN
+F 1 "+3.3VA" H 6915 4473 50  0000 C CNN
+F 2 "" H 6900 4300 50  0001 C CNN
+F 3 "" H 6900 4300 50  0001 C CNN
+	1    6900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR02
+U 1 1 60607E98
+P 3100 4150
+F 0 "#PWR02" H 3100 4000 50  0001 C CNN
+F 1 "+3.3VA" H 3115 4323 50  0000 C CNN
+F 2 "" H 3100 4150 50  0001 C CNN
+F 3 "" H 3100 4150 50  0001 C CNN
+	1    3100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR08
+U 1 1 60609871
+P 6900 2800
+F 0 "#PWR08" H 6900 2650 50  0001 C CNN
+F 1 "+3.3VA" H 6915 2973 50  0000 C CNN
+F 2 "" H 6900 2800 50  0001 C CNN
+F 3 "" H 6900 2800 50  0001 C CNN
+	1    6900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4100 6500 4300
+Wire Wire Line
+	6500 4300 6900 4300
+Connection ~ 6500 4100
+Wire Wire Line
+	5550 2550 5550 2850
+Wire Wire Line
+	5450 2950 5650 2950
+Wire Wire Line
+	5650 2950 5650 2850
+Wire Wire Line
+	5650 2850 6050 2850
+Wire Wire Line
+	6050 2850 6050 2800
+Connection ~ 5650 2850
+Wire Wire Line
+	6050 2800 6900 2800
+Connection ~ 6050 2800
+Wire Wire Line
+	3350 4100 3350 4150
+Wire Wire Line
+	3350 4150 3100 4150
+Connection ~ 3350 4100
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 60638BC3
+P 3100 3050
+F 0 "J2" H 3208 3331 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3000 3250 50  0000 C CNN
+F 2 "" H 3100 3050 50  0001 C CNN
+F 3 "~" H 3100 3050 50  0001 C CNN
+	1    3100 3050
+	1    0    0    -1  
+$EndComp
+Text Notes 2700 3000 0    50   ~ 0
+I2S_BCK
+Text Notes 2650 3100 0    50   ~ 0
+I2S_SDOUT
+Text Notes 2700 3200 0    50   ~ 0
+I2S_LRCK
 $EndSCHEMATC
