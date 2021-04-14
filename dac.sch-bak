@@ -6,10 +6,10 @@ encoding utf-8
 Sheet 1 1
 Title "Modulo Pcm5102a Decodificador Stereo Audio Digital"
 Date "2021-03-13"
-Rev "Pablo Aguirre"
+Rev ""
 Comp "Florencia Battocchia - Diseño de PCB -CESE"
-Comment1 ""
-Comment2 ""
+Comment1 "Revisor: Pablo Aguirre"
+Comment2 "Creative Commons Attribution - NonCommercial-ShareAlike 4.0 International License"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -107,7 +107,7 @@ U 1 1 604E99FE
 P 3350 3600
 F 0 "C1" H 3150 3650 50  0000 L CNN
 F 1 "10uF" H 3100 3550 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 3350 3600 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3350 3600 50  0001 C CNN
 F 3 "~" H 3350 3600 50  0001 C CNN
 	1    3350 3600
 	1    0    0    -1  
@@ -118,7 +118,7 @@ U 1 1 604E9E0D
 P 6050 2700
 F 0 "C8" H 5959 2654 50  0000 R CNN
 F 1 "10uF" H 5959 2745 50  0000 R CNN
-F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 6050 2700 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 6050 2700 50  0001 C CNN
 F 3 "~" H 6050 2700 50  0001 C CNN
 	1    6050 2700
 	-1   0    0    1   
@@ -129,7 +129,7 @@ U 1 1 604EA1DE
 P 3350 3950
 F 0 "C2" H 3259 3904 50  0000 R CNN
 F 1 "10uF" H 3259 3995 50  0000 R CNN
-F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 3350 3950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3350 3950 50  0001 C CNN
 F 3 "~" H 3350 3950 50  0001 C CNN
 	1    3350 3950
 	-1   0    0    1   
@@ -140,7 +140,7 @@ U 1 1 604EA5B5
 P 6500 3950
 F 0 "C11" H 6250 3900 50  0000 L CNN
 F 1 "10uF" H 6250 4000 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 6500 3950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 6500 3950 50  0001 C CNN
 F 3 "~" H 6500 3950 50  0001 C CNN
 	1    6500 3950
 	-1   0    0    1   

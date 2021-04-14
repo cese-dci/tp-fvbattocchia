@@ -1,0 +1,14 @@
+grilla 1mm para el posicionamiento
+grilla 0.5mm ruteo 
+
+margen global: 0,2mm
+
+ancho de pista: 0,2mm capa cobre superficial por componente SMD
+ancho de pista 0,8 mm capa de cobre inferior componentes THT
+
+vias 1,6mm agujero de via 0,8mm
+
+
+
+
+
