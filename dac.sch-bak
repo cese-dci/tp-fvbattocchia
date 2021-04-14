@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Modulo Pcm5102a 5102 Decodificador Stereo Audio Digital"
+Title "Modulo Pcm5102a Decodificador Stereo Audio Digital"
 Date "2021-03-13"
-Rev ""
+Rev "Pablo Aguirre"
 Comp "Florencia Battocchia - Diseño de PCB -CESE"
 Comment1 ""
 Comment2 ""
@@ -61,8 +61,8 @@ $Comp
 L Device:C C3
 U 1 1 604E6F3C
 P 3800 3600
-F 0 "C3" H 3915 3646 50  0000 L CNN
-F 1 "0.1uF" H 3915 3555 50  0000 L CNN
+F 0 "C3" H 3550 3650 50  0000 L CNN
+F 1 "0.1uF" H 3500 3550 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 3838 3450 50  0001 C CNN
 F 3 "~" H 3800 3600 50  0001 C CNN
 	1    3800 3600
@@ -105,8 +105,8 @@ $Comp
 L Device:CP1_Small C1
 U 1 1 604E99FE
 P 3350 3600
-F 0 "C1" H 3441 3646 50  0000 L CNN
-F 1 "10uF" H 3441 3555 50  0000 L CNN
+F 0 "C1" H 3150 3650 50  0000 L CNN
+F 1 "10uF" H 3100 3550 50  0000 L CNN
 F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 3350 3600 50  0001 C CNN
 F 3 "~" H 3350 3600 50  0001 C CNN
 	1    3350 3600
@@ -138,12 +138,12 @@ $Comp
 L Device:CP1_Small C11
 U 1 1 604EA5B5
 P 6500 3950
-F 0 "C11" H 6591 3996 50  0000 L CNN
-F 1 "10uF" H 6591 3905 50  0000 L CNN
+F 0 "C11" H 6250 3900 50  0000 L CNN
+F 1 "10uF" H 6250 4000 50  0000 L CNN
 F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 6500 3950 50  0001 C CNN
 F 3 "~" H 6500 3950 50  0001 C CNN
 	1    6500 3950
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4400 2750 4400 2150
@@ -153,14 +153,10 @@ Wire Wire Line
 	3350 3850 3350 3800
 Wire Wire Line
 	3800 3750 3800 3800
-Wire Wire Line
-	3800 3800 3350 3800
 Connection ~ 3800 3800
 Connection ~ 3350 3800
 Wire Wire Line
 	3350 3800 3350 3700
-Wire Wire Line
-	3800 3450 3350 3450
 Wire Wire Line
 	3350 3450 3350 3500
 Connection ~ 3800 3450
@@ -222,7 +218,7 @@ L Device:C C10
 U 1 1 604E7E3D
 P 6100 3950
 F 0 "C10" H 6215 3996 50  0000 L CNN
-F 1 "0.1uF" H 6215 3905 50  0000 L CNN
+F 1 "0.1uF" H 6200 3900 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6138 3800 50  0001 C CNN
 F 3 "~" H 6100 3950 50  0001 C CNN
 	1    6100 3950
@@ -380,8 +376,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 2950 5650 2850
 Wire Wire Line
-	5650 2850 6050 2850
-Wire Wire Line
 	6050 2850 6050 2800
 Connection ~ 5650 2850
 Wire Wire Line
@@ -414,7 +408,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 3550 4150 3550
 Wire Wire Line
-	3800 3450 4400 3450
+	3800 3450 4100 3450
 Wire Wire Line
 	3200 3350 4400 3350
 Wire Wire Line
@@ -487,7 +481,6 @@ Wire Wire Line
 	6100 3750 6500 3750
 Wire Wire Line
 	6500 3750 6500 3850
-Connection ~ 6500 3850
 Wire Wire Line
 	6600 3150 7150 3150
 $Comp
@@ -547,4 +540,63 @@ Wire Wire Line
 	7350 3450 7350 3400
 Connection ~ 7350 2750
 Connection ~ 7350 3450
+Connection ~ 6500 3850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60790EFD
+P 5650 2950
+F 0 "#FLG0101" H 5650 3025 50  0001 C CNN
+F 1 "PWR_FLAG" V 5650 3078 50  0000 L CNN
+F 2 "" H 5650 2950 50  0001 C CNN
+F 3 "~" H 5650 2950 50  0001 C CNN
+	1    5650 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60797BB9
+P 4100 3450
+F 0 "#FLG0102" H 4100 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 3400 50  0000 C CNN
+F 2 "" H 4100 3450 50  0001 C CNN
+F 3 "~" H 4100 3450 50  0001 C CNN
+	1    4100 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 3800 3800 3800
+Wire Wire Line
+	3350 3450 3800 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	4100 3450 4400 3450
+Connection ~ 5650 2950
+Wire Wire Line
+	5650 2850 6050 2850
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 607F3801
+P 7150 2550
+F 0 "#FLG0103" H 7150 2625 50  0001 C CNN
+F 1 "PWR_FLAG" H 7150 2723 50  0000 C CNN
+F 2 "" H 7150 2550 50  0001 C CNN
+F 3 "~" H 7150 2550 50  0001 C CNN
+	1    7150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2550 7150 2750
+Connection ~ 7150 2750
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 607F9605
+P 3100 3800
+F 0 "#FLG0104" H 3100 3875 50  0001 C CNN
+F 1 "PWR_FLAG" V 3100 3927 50  0000 L CNN
+F 2 "" H 3100 3800 50  0001 C CNN
+F 3 "~" H 3100 3800 50  0001 C CNN
+	1    3100 3800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3100 3800
 $EndSCHEMATC
