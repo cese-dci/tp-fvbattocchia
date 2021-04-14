@@ -6,10 +6,10 @@ encoding utf-8
 Sheet 1 1
 Title "Modulo Pcm5102a Decodificador Stereo Audio Digital"
 Date "2021-03-13"
-Rev "Pablo Aguirre"
+Rev ""
 Comp "Florencia Battocchia - Diseño de PCB -CESE"
-Comment1 ""
-Comment2 ""
+Comment1 "Revisor: Pablo Aguirre"
+Comment2 "Creative Commons Attribution - NonCommercial-ShareAlike 4.0 International License"
 Comment3 ""
 Comment4 ""
 $EndDescr
