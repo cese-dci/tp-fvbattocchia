@@ -8,7 +8,7 @@ ancho de pista 0,8 mm capa de cobre inferior componentes THT
 
 vias 1,6mm agujero de via 0,8mm
 
-
+distancias del borden al margen 1mm
 
 
 
