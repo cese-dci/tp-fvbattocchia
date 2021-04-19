@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 13)
+    (drawings 14)
     (tracks 110)
     (zones 0)
     (modules 21)
@@ -1432,6 +1432,9 @@
     )
   )
 
+  (gr_text "Grilla: 1mm, 0,5mm\nMargen: 0,2mm\nVia: 1,6mm / 0,8mm\nPista: 0,2mm, 0,8mm\nDistancias al borde: 1mm\nTerminacion: HASL\n" (at 202 81) (layer Dwgs.User)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (gr_line (start 134 110) (end 184 110) (layer Margin) (width 0.15) (tstamp 6078DC1E))
   (gr_line (start 134 81) (end 134 110) (layer Margin) (width 0.15))
   (gr_line (start 184 81) (end 134 81) (layer Margin) (width 0.15))
