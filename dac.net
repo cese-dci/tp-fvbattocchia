@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/florencia/Especializacion/Diseño_de_circuitos/tp-fvbattocchia/dac.sch)
-    (date "lun 19 abr 2021 18:38:54 -03")
+    (date "mié 28 abr 2021 18:56:53 -03")
     (tool "Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -175,7 +175,14 @@
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x02_Male) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 607E48C9)))
+      (tstamp 607E48C9))
+    (comp (ref H1)
+      (value MountingHole)
+      (footprint MountingHole:MountingHole_2.5mm)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 608A30DB)))
   (libparts
     (libpart (lib Connector) (part Conn_01x02_Male)
       (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
@@ -241,6 +248,14 @@
       (fields
         (field (name Reference) FID)
         (field (name Value) Fiducial)))
+    (libpart (lib Mechanical) (part MountingHole)
+      (description "Mounting Hole without connection")
+      (docs ~)
+      (footprints
+        (fp MountingHole*))
+      (fields
+        (field (name Reference) H)
+        (field (name Value) MountingHole)))
     (libpart (lib RCJ-2121) (part RCJ-2121)
       (fields
         (field (name Reference) J)

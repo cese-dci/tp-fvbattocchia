@@ -716,4 +716,15 @@ F 3 "~" H 5650 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5650 5400 5750 5400
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 608A30DB
+P 7150 3700
+F 0 "H1" H 7250 3746 50  0000 L CNN
+F 1 "MountingHole" H 7250 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 7150 3700 50  0001 C CNN
+F 3 "~" H 7150 3700 50  0001 C CNN
+	1    7150 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
